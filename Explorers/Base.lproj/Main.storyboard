@@ -55,20 +55,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-iL-0gU">
-                                <rect key="frame" x="20" y="150" width="374" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Senior Explorers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfs-Rc-yt7">
-                                <rect key="frame" x="20" y="217" width="192" height="30"/>
+                                <rect key="frame" x="20" y="162" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ReQ-4G-35O">
-                                <rect key="frame" x="20" y="257" width="374" height="222"/>
+                                <rect key="frame" x="20" y="202" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1mr-ET-6Ym">
@@ -120,14 +115,14 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Junior Explorers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rok-jZ-MJh">
-                                <rect key="frame" x="20" y="506" width="191" height="30"/>
+                                <rect key="frame" x="20" y="451" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-1P-NXe">
-                                <rect key="frame" x="20" y="546" width="374" height="222"/>
+                                <rect key="frame" x="20" y="491" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JIw-BD-cBP">
@@ -179,15 +174,15 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-y9-ily">
-                                <rect key="frame" x="347" y="217" width="47" height="30"/>
+                                <rect key="frame" x="347" y="162" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See All"/>
                                 <connections>
-                                    <segue destination="9mj-Sa-rnD" kind="show" id="N6v-3G-sSd"/>
+                                    <segue destination="9mj-Sa-rnD" kind="show" id="ByE-FM-eIU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-MN-xSB">
-                                <rect key="frame" x="347" y="506" width="47" height="30"/>
+                                <rect key="frame" x="347" y="451" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See All"/>
                                 <connections>
@@ -361,6 +356,11 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="157" height="197"/>
+                                        <connections>
+                                            <outlet property="juniorImage" destination="8aB-xt-eyo" id="g5W-41-Mmo"/>
+                                            <outlet property="nameJunior" destination="wlU-TV-bLv" id="Skl-sD-77j"/>
+                                            <outlet property="roleJunior" destination="gtk-85-qB1" id="5lg-PP-dlK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -374,6 +374,9 @@
                         <viewLayoutGuide key="safeArea" id="2Xp-Nt-6Sd"/>
                     </view>
                     <navigationItem key="navigationItem" id="KqW-S9-EsB"/>
+                    <connections>
+                        <outlet property="allJuniorView" destination="Cvv-IV-2yH" id="aOl-tx-C0N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUv-Q1-bnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,23 +390,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cij-oC-T3L">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search Name" translatesAutoresizingMaskIntoConstraints="NO" id="cij-oC-T3L">
                                 <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>name</string>
+                                </scopeButtonTitles>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-3V-MZM">
                                 <rect key="frame" x="0.0" y="159" width="414" height="737"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xbr-kl-551">
-                                    <size key="itemSize" width="152" height="196"/>
+                                    <size key="itemSize" width="157" height="197"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="H74-5G-EiV" customClass="allSeniorCollectionViewCell" customModule="Explorers" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="allCellSenior" id="H74-5G-EiV" customClass="allSeniorCollectionViewCell" customModule="Explorers" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="197"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w0S-wc-HRR">
@@ -431,6 +437,11 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="157" height="197"/>
+                                        <connections>
+                                            <outlet property="nameSenior" destination="VWT-gU-kNp" id="KVZ-hI-tXT"/>
+                                            <outlet property="roleSenior" destination="hx5-4P-RYc" id="hvg-QP-1uC"/>
+                                            <outlet property="seniorImage" destination="qme-oZ-z2v" id="c0K-Zp-Kf1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -439,10 +450,14 @@
                         <viewLayoutGuide key="safeArea" id="Dq7-Uv-Usy"/>
                     </view>
                     <navigationItem key="navigationItem" id="taf-gg-NC7"/>
+                    <connections>
+                        <outlet property="allSeniorView" destination="PTr-3V-MZM" id="aJY-oc-ugW"/>
+                        <outlet property="searchAllSenior" destination="cij-oC-T3L" id="s4z-Ug-lxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zf-Ly-6ov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286.9565217391305" y="770.75892857142856"/>
+            <point key="canvasLocation" x="1020" y="685"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="UA7-Tc-Eln">

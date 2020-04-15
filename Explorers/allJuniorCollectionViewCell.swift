@@ -10,4 +10,8 @@ import UIKit
 
 class allJuniorCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var juniorImage: UIImageView!
+    @IBOutlet weak var nameJunior: UILabel!
+    @IBOutlet weak var roleJunior: UILabel!
+    
 }

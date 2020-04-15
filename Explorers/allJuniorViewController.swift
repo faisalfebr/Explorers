@@ -9,7 +9,8 @@
 import UIKit
 
 class allJuniorViewController: UIViewController {
-
+    
+    @IBOutlet weak var allJuniorView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

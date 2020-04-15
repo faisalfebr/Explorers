@@ -10,4 +10,10 @@ import UIKit
 
 class allSeniorCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var seniorImage: UIImageView!
+    @IBOutlet weak var nameSenior: UILabel!
+    @IBOutlet weak var roleSenior: UILabel!
+    
+    
+    
 }
